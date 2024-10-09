@@ -27,17 +27,17 @@ CMD Xvfb :99 -screen 0 1024x768x16 & \
     tail -f /dev/null
 
 
-RUN	ls "/files/ARDrone_SDK_2_0_1" || unzip -d /files/ /root/ARDrone_SDK_2_0_1.zip && \
-   	cd /files/ && \ 
-    	patch -p2  < /root/ardrone1404.patch && \
-    	patch -p2  < /root/ardrone1604.patch && \
-	rm -rf /root/ARDrone_SDK_2_0_1.zip /files/__MACOSX /files/.DSStore && \
-	find . -name '.DS_Store' -type f -delete && \
-	rm -rf /var/lib/apt/lists/* && \
-	cd /files/ARDrone_SDK_2_0_1/Examples/Linux && \
-	make
+# RUN	ls "/files/ARDrone_SDK_2_0_1" || unzip -d /files/ /root/ARDrone_SDK_2_0_1.zip && \
+#    	cd /files/ && \ 
+#     	patch -p2  < /root/ardrone1404.patch && \
+#     	patch -p2  < /root/ardrone1604.patch && \
+# 	rm -rf /root/ARDrone_SDK_2_0_1.zip /files/__MACOSX /files/.DSStore && \
+# 	find . -name '.DS_Store' -type f -delete && \
+# 	rm -rf /var/lib/apt/lists/* && \
+# 	cd /files/ARDrone_SDK_2_0_1/Examples/Linux && \
+# 	make
 
-	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
+# 	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
 
-	InkPnhtr
+# 	InkPnhtr
 	
