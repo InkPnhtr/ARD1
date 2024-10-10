@@ -12,7 +12,9 @@ tasks:
 
     command: echo 'start script'
       echo "Running..."
+      Xvfb :99 -screen 0 1024x768x16 &
       export DISPLAY=:99
+      ps aux | grep Xvfb
       #./path/to/your/linux_video_demo
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
