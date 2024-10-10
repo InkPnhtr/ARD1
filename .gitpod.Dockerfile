@@ -25,7 +25,7 @@ RUN if [ ! `grep "precise" /etc/lsb-release` ]; then dpkg --add-architecture i38
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Start Xvfb when the container starts
-CMD Xvfb :99 -screen 0 1024x768x16 & \
+CMD xvfb :99 -screen 0 1024x768x16 & \
     export DISPLAY=:99 && \
     tail -f /dev/null
 
