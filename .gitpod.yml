@@ -5,7 +5,7 @@ tasks:
   - name: Script Task
     init: echo 'init script'
       echo 'Initializing...'
-      export DISPLAY=:99
+      #export DISPLAY=:99
       #./path/to/your/build_or_setup_script.sh
 
       # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds

@@ -11,7 +11,7 @@ RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone &
 
 
 
-ADD ARDrone_SDK_2_0_1.zip patches/ardrone1404.patch patches/ardrone1604.patch patches/OSXSegFault.patch /root/
+# ADD ARDrone_SDK_2_0_1.zip patches/ardrone1404.patch patches/ardrone1604.patch patches/OSXSegFault.patch /root/
 
 RUN if [ ! `grep "precise" /etc/lsb-release` ]; then dpkg --add-architecture i386; fi  && \
 	apt-get -qq update && \
