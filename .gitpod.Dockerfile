@@ -6,7 +6,7 @@ ENV TZ=Europe/London
 # Link the timezone file and install tzdata non-interactively
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone && \
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y sudo xvfb tzdata git unzip patch libncurses5-dev libncursesw5-dev libgtk2.0-dev libxml2-dev libudev-dev libiw-dev libsdl1.2-dev lib32z1 build-essential daemontools net-tools nano gcc-multilib &&\
+    DEBIAN_FRONTEND=noninteractive apt-get install -y xvfb tzdata git unzip patch libncurses5-dev libncursesw5-dev libgtk2.0-dev libxml2-dev libudev-dev libiw-dev libsdl1.2-dev lib32z1 build-essential daemontools net-tools nano gcc-multilib &&\
     echo "ALL ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers
 
 
