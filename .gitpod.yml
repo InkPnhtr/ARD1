@@ -20,7 +20,7 @@ tasks:
       export DISPLAY=:99
       ps aux | grep Xvfb
       chmod +x ./cds1.sh
-
+      sudo ./cds1.sh
       #./path/to/your/linux_video_demo
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
