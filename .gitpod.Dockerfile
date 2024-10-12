@@ -27,6 +27,6 @@ RUN apt-get update && apt-get install -y \
     gcc-multilib
 
 # Start Xvfb when the container starts
-CMD Xvfb :99 -screen 0 1024x768x16 & \
+CMD sudo Xvfb :99 -screen 0 1024x768x16 & \
     export DISPLAY=:99 && \
     tail -f /dev/null
